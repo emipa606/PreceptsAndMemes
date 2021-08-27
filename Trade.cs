@@ -9,7 +9,7 @@ using HarmonyLib;
 
 namespace MemesAndP
 {
-    [HarmonyPatch(typeof(Faction), "Notify_PlayerTraded")]
+    /*[HarmonyPatch(typeof(Faction), "Notify_PlayerTraded")]
     public static class TradedPatch
     {
         public static void Postfix()
@@ -17,8 +17,21 @@ namespace MemesAndP
             //gets last tick you traded, no mater which colonist or distance. Saves it to an attribute in the main class.
             PandM.LastTickTraded = Find.TickManager.TicksGame;
         }
+    }*/
+
+    [HarmonyPatch(typeof(TradeDeal), "TryExecute")]
+    public static class TradedDealPatch
+    {
+        public static void Postfix(ref bool actuallyTraded)
+        {
+            //Whenever you accept a trade, it gets if you actually traded, if true then it saves the tick you traded at.
+            if (actuallyTraded == true)
+            {
+                PandM.LastTickTraded = Find.TickManager.TicksGame;
+            }
+        }
     }
-    
+
     //Creates a thought worker based on the raiding precept one.
     public class ThoughtWorker_Precept_Trading : ThoughtWorker_Precept, IPreceptCompDescriptionArgs
     {
@@ -77,21 +90,21 @@ namespace MemesAndP
                 true
             },
             {
-                new CurvePoint(5f, 0f), //The first parameter here should be equal to your DaysSinceLastTradedThreshold, or equivalent attribute.
+                new CurvePoint(Settings.dayForTradeThreshold, 0f),
                 true
             },
             {
-                new CurvePoint(10f, 1f),
+                new CurvePoint(Settings.dayForTradeThreshold*2, 1f),
                 true
             },
             {
-                new CurvePoint(15f, 1.5f),
+                new CurvePoint(Settings.dayForTradeThreshold*3, 1.5f),
                 true
             }
         };
 
         //Threshold of days from last trade in which the thought will be a possitive one.
-        private int DaysSinceLastTradedThreshold = 5;
+        private int DaysSinceLastTradedThreshold = Settings.dayForTradeThreshold;
     }
 
 }

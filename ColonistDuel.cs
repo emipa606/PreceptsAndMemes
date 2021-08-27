@@ -48,4 +48,15 @@ namespace MemesAndP
 
 		public bool mustBeCapableToFight;
 	}
+
+	//I use this whe I want to carry colonists to rituals as if they were prisoners. 
+	public class RitualStage_InteractWithPrisoner : RitualStage
+	{
+		// Token: 0x06005D0B RID: 23819 RVA: 0x00203875 File Offset: 0x00201A75
+		public override TargetInfo GetSecondFocus(LordJob_Ritual ritual)
+		{
+			return ritual.assignments.Participants.FirstOrDefault((Pawn p) => p.IsColonist);
+		}
+	}
+
 }

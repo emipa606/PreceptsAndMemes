@@ -10,22 +10,21 @@ using MemesAndP;
 namespace MemesAndP
 {
     //Based on vanillas slavery classes
-    //The buffs and debuffs have no cap. This is sort of intentional, as it makes insanely big colonies (30+) easier to manage.
     public class Thought_Situational_Precept_PopulationHigh : Thought_Situational
     {
-        // Multiplies the base values of mood by the population - 5
+        // Multiplies the base values of mood by the population - threshold. Caps at 15 colonists
         public override float MoodOffset()
         {
-            return this.BaseMoodOffset * (PandM.GetPopulation() - 5);
+            return this.BaseMoodOffset * (PandM.GetPopulation() - Settings.colonistThreshold > 15?15: PandM.GetPopulation() - Settings.colonistThreshold);
         }
 
     }
     public class ThoughtWorker_Precept_PopulationHigh : ThoughtWorker_Precept
     {
-        //Becomes active when population is greater than 5
+        //Becomes active when population is greater than the Threshold
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {
-            return p.IsColonist && PandM.GetPopulation() > 5;
+            return p.IsColonist && PandM.GetPopulation() > Settings.colonistThreshold;
         }
 
     }
@@ -41,12 +40,14 @@ namespace MemesAndP
     }
     public class ThoughtWorker_Precept_PopulationLow : ThoughtWorker_Precept
     {
-        //Becomes active when population is lesser than 5
+        //Becomes active when population is lesser than the Threshold
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {
-            return p.IsColonist && PandM.GetPopulation() < 5;
+            return p.IsColonist && PandM.GetPopulation() < Settings.colonistThreshold;
         }
 
     }
+
+
 
 }

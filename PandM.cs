@@ -6,15 +6,40 @@ using System.Threading.Tasks;
 using Verse;
 using RimWorld;
 using HarmonyLib;
+using UnityEngine;
 
 namespace MemesAndP
 {
     public class PandM : Mod
     {
+        MemesAndP.Settings settings;
         public PandM(ModContentPack pack) : base(pack)
         {
-
+            this.settings = GetSettings<MemesAndP.Settings>();
         }
+
+
+        public override void DoSettingsWindowContents(Rect inRect)
+        {
+            Listing_Standard listingStandard = new Listing_Standard();
+            listingStandard.Begin(inRect);
+            listingStandard.Label("Population threshold for population precepts: " + Settings.colonistThreshold + " (At this number, neither buffs nor debuffs are active)");
+            listingStandard.IntAdjuster(ref Settings.colonistThreshold, 1, 1);
+            listingStandard.GapLine();
+            listingStandard.Label("Max days since last trade for trade precepts: " + Settings.dayForTradeThreshold + " (After this number of days, it becomes a negative mood. Requires restart to apply)");
+            listingStandard.IntAdjuster(ref Settings.dayForTradeThreshold, 1, 1);
+            listingStandard.End();
+            base.DoSettingsWindowContents(inRect);
+        }
+
+        public override string SettingsCategory()
+        {
+            return "Precepts And Memes";
+        }
+
+
+
+
         public static int GetPopulation()
         {
                                                                                                     //Counts all the pawns belonging to your faction.
@@ -44,6 +69,7 @@ namespace MemesAndP
         //Death cancelling precepts
         public static PreceptDef Death_DontCare;
         public static PreceptDef Death_Revered;
+        public static PreceptDef Orthodoxy;
     }
 
     [DefOf]
@@ -54,7 +80,7 @@ namespace MemesAndP
             DefOfHelper.EnsureInitializedInCtor(typeof(ThoughtDefOf));
         }
 
-        public static ThoughtDef ColonistDied_Revered; //I think I don't use this one. I'm leaving it in just in case.
+        public static ThoughtDef ColonistDied_Revered; //I think I didn't use this one. I'm leaving it in just in case.
         public static HistoryEventDef ColonistDied;//Event of colonist dying.
     }
 }

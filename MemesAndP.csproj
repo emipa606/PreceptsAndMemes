@@ -53,6 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Settings.cs" />
+    <Compile Include="RitualRoleNonSlaveColonist.cs" />
+    <Compile Include="RitualsUtility.cs" />
     <Compile Include="Orthodoxy.cs" />
     <Compile Include="Death.cs" />
     <Compile Include="ColonistDuel.cs" />
