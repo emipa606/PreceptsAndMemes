@@ -36,13 +36,19 @@ namespace MemesAndP
 		// Some credit goes to Vanilla Traits Expanded, as I learned how to do this part thanks to that mod.
 		private static bool Prefix(MemoryThoughtHandler __instance, Thought_Memory newThought, Pawn otherPawn)
 		{
-			//Checks if the pawn that's about to get one of the thoughts contained in deathThoughts belongs to an Ideo that has the death cancelling precepts.
-			
-			if ((__instance.pawn.Ideo.HasPrecept(PreceptDefOfDeath.Death_DontCare) || __instance.pawn.Ideo.HasPrecept(PreceptDefOfDeath.Death_Revered)) && deathThoughts.Contains(newThought.def.defName))
-			{
-				return false;
+            //Checks if the pawn that's about to get one of the thoughts contained in deathThoughts belongs to an Ideo that has the death cancelling precepts.
+            try
+            {
+				if ((__instance.pawn.Ideo.HasPrecept(PreceptDefOfDeath.Death_DontCare) || __instance.pawn.Ideo.HasPrecept(PreceptDefOfDeath.Death_Revered)) && deathThoughts.Contains(newThought.def.defName))
+				{
+					return false;
+				}
+				return true;
 			}
-			return true;
+			catch(Exception e)
+            {
+				return true;
+			}
 		}
 
 		public static HashSet<string> deathThoughts = new HashSet<string>
