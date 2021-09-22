@@ -47,7 +47,8 @@ namespace MemesAndP
                                                                                                     //multiple colonies I would make it check the map of every colonist individually. Counting caravans
                                                                                                     //is intentional for balancing purposes.
         }
-        public static int LastTickTraded = -9999999;
+
+        public static History history = new History();
     }
 
     [StaticConstructorOnStartup]

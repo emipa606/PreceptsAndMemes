@@ -27,8 +27,28 @@ namespace MemesAndP
             //Whenever you accept a trade, it gets if you actually traded, if true then it saves the tick you traded at.
             if (actuallyTraded == true)
             {
-                PandM.LastTickTraded = Find.TickManager.TicksGame;
+                PandM.history.lastTickTraded = Find.TickManager.TicksGame;
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(RimWorld.History), "ExposeData")]
+    public static class HistoryPatch
+    {
+        public static void Postfix()
+        {
+            PandM.history.ExposeData();
+        }
+    }
+
+
+    public class History : IExposable
+    {
+        public int lastTickTraded = -9999999;
+
+        public void ExposeData()
+        {
+            Scribe_Values.Look<int>(ref lastTickTraded, "lastTickTraded", -9999999, false);
         }
     }
 
@@ -40,7 +60,7 @@ namespace MemesAndP
             //Gets the last tick you traded and divides it into days.
             get
             {
-                return (float)(Find.TickManager.TicksGame - PandM.LastTickTraded) / 60000f;
+                return (float)(Find.TickManager.TicksGame - PandM.history.lastTickTraded) / 60000f;
             }
         }
 
