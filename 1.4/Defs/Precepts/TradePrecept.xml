@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IssueDef>
+    <defName>Trade</defName>
+    <label>trading</label>
+    <iconPath>UI/TradeSymbol</iconPath>
+  </IssueDef>
+  <PreceptDef>
+    <defName>TradingHonored</defName>
+    <issue>Trade</issue>
+    <label>Honored</label>
+    <description>The art of trading is second to none. We ought to trade as often as we can.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <selectionWeight>0.75</selectionWeight>
+    <conflictingMemes>
+      <li>Raider</li>
+    </conflictingMemes>
+    <associatedMemes>
+      <li>Trader</li>
+    </associatedMemes>
+    <requiredMemes>
+      <li>Trader</li>
+    </requiredMemes>
+    <statOffsets>
+      <TradePriceImprovement>0.20</TradePriceImprovement>
+      <WorkSpeedGlobal>-0.18</WorkSpeedGlobal>
+    </statOffsets>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>RecentTrade_Honored</thought>
+        <thoughtStageDescriptions>
+          <li>Less than {DAYSSINCELASTTRADETHRESHOLD} days since our last trade</li>
+          <li>More than {DAYSSINCELASTTRADETHRESHOLD} days since our last trade</li>
+        </thoughtStageDescriptions>
+      </li>
+    </comps>
+  </PreceptDef>
+  <PreceptDef>
+    <defName>TradingRespected</defName>
+    <issue>Trade</issue>
+    <label>Respected</label>
+    <description>The art of trading is a noble one. We should use it whenever we can.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <selectionWeight>0.75</selectionWeight>
+    <conflictingMemes>
+      <li>Raider</li>
+    </conflictingMemes>
+    <associatedMemes>
+      <li>Trader</li>
+    </associatedMemes>
+    <requiredMemes>
+      <li>Trader</li>
+    </requiredMemes>
+    <statOffsets>
+      <TradePriceImprovement>0.10</TradePriceImprovement>
+      <WorkSpeedGlobal>-0.09</WorkSpeedGlobal>
+    </statOffsets>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>RecentTrade_Respected</thought>
+        <thoughtStageDescriptions>
+          <li>Less than {DAYSSINCELASTTRADETHRESHOLD} days since our last trade</li>
+          <li>More than {DAYSSINCELASTTRADETHRESHOLD} days since our last trade</li>
+        </thoughtStageDescriptions>
+      </li>
+    </comps>
+  </PreceptDef>
+  <PreceptDef>
+    <defName>TradingDontcare</defName>
+    <issue>Trade</issue>
+    <label>Don't care</label>
+    <description>Trading is just another tool for survival.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>20</defaultSelectionWeight>
+  </PreceptDef>
+  <!-- Thougths -->
+  <ThoughtDef>
+    <defName>RecentTrade_Honored</defName>
+    <workerClass>MemesAndP.ThoughtWorker_Precept_Trading</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>recent trade</label>
+        <description>We recently traded with someone. We're gonna be rich!</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+      <li>
+        <label>no recent trade</label>
+        <description>It's been far too long since we traded with anyone. We're a failure...</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RecentTrade_Respected</defName>
+    <workerClass>MemesAndP.ThoughtWorker_Precept_Trading</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>recent trade</label>
+        <description>We recently traded with someone.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>no recent trade</label>
+        <description>It's been far too long since we traded with anyone. Business ain't doing well, chief.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>
