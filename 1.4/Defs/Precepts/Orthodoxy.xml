@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IssueDef>
+    <defName>Orthodoxy</defName>
+    <label>orthodoxy</label>
+    <iconPath>UI/Issues/Slavery</iconPath>
+  </IssueDef>
+  <PreceptDef>
+    <defName>Orthodoxy</defName>
+    <issue>Orthodoxy</issue>
+    <label>Important</label>
+    <description>Our beliefs are of utmost importance. Most precept based moods are multiplied by 2. \n WARNING: Not thoroughly tested and probably highly unbalance. The early game is going to be hell most times.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <conflictingMemes>
+    </conflictingMemes>
+    <associatedMemes>
+    </associatedMemes>
+  </PreceptDef>
+</Defs>

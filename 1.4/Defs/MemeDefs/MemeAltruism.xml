@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <MemeDef>
+    <defName>Altruism</defName>
+    <label>altruism</label>
+    <description>Our role in life is to help others.</description>
+    <iconPath>UI/Charity</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>2</impact>
+    <renderOrder>999</renderOrder>
+    <exclusionTags>
+      <li>GroupRelation</li>
+      <li>AltruismCannibal</li>
+      <li>AltruismRaider</li>
+      <li>AltruismPain</li>
+    </exclusionTags>
+    <requireOne>
+      <li>
+        <li>Cannibalism_Abhorrent</li>
+      </li>
+      <li>
+        <li>Execution_Abhorrent</li>
+        <li>Execution_Horrible</li>
+        <li>Execution_HorribleIfInnocent</li>
+      </li>
+      <li>
+        <li>Slavery_Abhorrent</li>
+      </li>
+      <li>
+        <li>OrganUse_HorribleNoSell</li>
+        <li>OrganUse_Abhorrent</li>
+      </li>
+      <li>
+        <li>Scarification_Horrible</li>
+      </li>
+      <li>
+        <li>Scarification_Horrible</li>
+      </li>
+      <li>
+        <li>Charity_Essential</li>
+        <li>Charity_Important</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective-&gt;virtuous</li>
+        <li>memeAdjective-&gt;kind</li>
+        <li>memeAdjective-&gt;altruistic</li>
+        <li>memeAdjective-&gt;selfless</li>
+        <li>memeAdjective-&gt;trustworthy</li>
+        <li>memeAdjective-&gt;honest</li>
+        <li>memeAdjective-&gt;helpful</li>
+        <li>memeAdjective-&gt;charitable</li>
+        <li>memeConcept-&gt;virtue</li>
+        <li>memeConcept-&gt;kindness</li>
+        <li>memeConcept-&gt;altruism</li>
+        <li>memeConcept-&gt;selflessness</li>
+        <li>memeConcept-&gt;trust</li>
+        <li>memeConcept-&gt;honesty</li>
+        <li>memeConcept-&gt;compassion</li>
+        <li>memeConcept-&gt;sincerity</li>
+        <li>memeConcept-&gt;charity</li>
+        <li>memeConcept-&gt;helping</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <!-- theist myth -->
+          <li>creation(tag=meme_Altruism)        -&gt;[deity0_name] created us out of selflessness.</li>
+          <li>episode(uses=1,tag=meme_Altruism)  -&gt;[deity0_name] Taught us how to be kind, be it with kin or strangers.</li>
+          <!-- theist founder -->
+          <li>intro(tag=meme_Altruism)           -&gt;[deity0_name] spoke to [memberNamePlural] [revelationAdverb], teaching them the power of kindness, selflessness and trust.</li>
+          <li>conflict(tag=meme_Altruism)        -&gt;The [foeLeader] ordered the [memberNamePlural] to fight amongst each other and to distrust any and all.</li>
+          <li>founderJoin(tag=meme_Altruism)     -&gt;A [place_job] named [founderName] was blessed by [deity0_name] and gained miraculous knowledge about the importance of selflessness and honesty. [founder_pronoun] imparted this knowledge onto those that needed it the most.</li>
+          <li>victory(tag=meme_Altruism)         -&gt;The [memberNamePlural] gathered all [memberNamePlural]. They all learned to see the value of helping and trusting each other, abandoning the [foeLeader] and forging a new path.</li>
+          <!-- ideological founder -->
+          <li>setup(tag=meme_Altruism)           -&gt;Oppressed by distant rulers who sow the seeds of strife and distrust amongst the people, [founderName] created a rebel movement that changed the people's outlook on life, teaching them the value of selflessness.</li>
+          <li>story(uses=1,tag=meme_Altruism)    -&gt;[founderName] Helped everyone that needed it, until eventually the people began to help [founder_possessive] cause in return.</li>
+          <!-- ideological lesson -->
+          <li>lessonIntro(tag=meme_Altruism)         -&gt;War, selfishness, deceit - these are the things that make us stray further from the truth.</li>
+          <li>lesson(tag=meme_Altruism)              -&gt;each person deserves to be treated with respect, honesty and compassion</li>
+          <li>lessonReinforcement(tag=meme_Altruism) -&gt;This is what we ought to know to better help those in need.</li>
+          <!-- archist -->
+          <li>archistBasis(tag=meme_Altruism)    -&gt;Archotechs stand as the most virtuous existance. They recognize and judge each of us on how we treat others.</li>
+          <li>archistFact(tag=meme_Altruism)     -&gt;At death, the archotechs examine the good deeds each person.</li>
+          <li>archistProphecy(tag=meme_Altruism) -&gt;The archotecs are what will bring ultimate peace and sincerity to the universe.</li>
+          <!-- animist -->
+          <li>animistBasis(tag=meme_Altruism)    -&gt;Before everything, there was only selfish spirits. It was only through learning the gifts of selflessness that they managed to create the world.</li>
+          <li>animistFact(tag=meme_Altruism)     -&gt;Every spirit lends its help to our world and it's creatures, and they expect us to do the same.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Charity</ideoName>
+        <theme>charity</theme>
+        <adjective>charitable</adjective>
+        <member>philanthropist </member>
+      </li>
+    </symbolPacks>
+    <agreeableTraits>
+      <li>Kind</li>
+      <li>Wimp</li>
+      <li>Ascetic</li>
+    </agreeableTraits>
+    <disagreeableTraits>
+      <li>Cannibal</li>
+      <li>Bloodlust</li>
+      <li>Jealous</li>
+      <li>Greedy</li>
+      <li>Psychopath</li>
+    </disagreeableTraits>
+  </MemeDef>
+</Defs>
