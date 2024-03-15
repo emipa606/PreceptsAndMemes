@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PreceptDef[defName="Charity_Worthwhile"]/conflictingMemes</xpath>
+    <value>
+      <li>Trader</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PreceptDef[defName="Charity_Important"]/conflictingMemes</xpath>
+    <value>
+      <li>Trader</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PreceptDef[defName="Charity_Essential"]/conflictingMemes</xpath>
+    <value>
+      <li>Trader</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PreceptDef[defName="Corpses_DontCare"]/requiredMemes</xpath>
+    <value>
+      <li>Necrolatry</li>
+    </value>
+  </Operation>
+</Patch>

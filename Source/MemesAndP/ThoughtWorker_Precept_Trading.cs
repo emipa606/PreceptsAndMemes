@@ -10,13 +10,13 @@ public class ThoughtWorker_Precept_Trading : ThoughtWorker_Precept, IPreceptComp
     //Once you reach the sixth day, the ShouldHaveThought metod makes the thought stage change, and in this case it now becomes a negative thought.
     //We slowly increase the multiplier linealy, until it's back a x1 at 10 days without trade.
     //After this, it increases linealy to x1.5 in the next five days, and then stops.
-    private static readonly SimpleCurve MoodMultiplierCurve = new SimpleCurve
-    {
+    private static readonly SimpleCurve MoodMultiplierCurve =
+    [
         new CurvePoint(0f, 1f),
         new CurvePoint(Settings.dayForTradeThreshold, 0f),
         new CurvePoint(Settings.dayForTradeThreshold * 2, 1f),
         new CurvePoint(Settings.dayForTradeThreshold * 3, 1.5f)
-    };
+    ];
 
     //Threshold of days from last trade in which the thought will be a possitive one.
     private readonly int DaysSinceLastTradedThreshold = Settings.dayForTradeThreshold;

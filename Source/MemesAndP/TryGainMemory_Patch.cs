@@ -9,8 +9,8 @@ namespace MemesAndP;
 [HarmonyPatch(typeof(MemoryThoughtHandler), "TryGainMemory", typeof(Thought_Memory), typeof(Pawn))]
 public static class TryGainMemory_Patch
 {
-    public static readonly HashSet<string> deathThoughts = new HashSet<string>
-    {
+    public static readonly HashSet<string> deathThoughts =
+    [
         "KnowGuestExecuted",
         "KnowColonistExecuted",
         "KnowPrisonerDiedInnocent",
@@ -58,7 +58,7 @@ public static class TryGainMemory_Patch
         "KilledColonist",
         "KilledColonyAnimal",
         "OtherTravelerDied"
-    };
+    ];
 
     // This cancels the though related to death for any of the pawns that belong to an Ideo that has the two death precepts. This works because when
     // a prefix returns a "false", it skips the rest of the prefixes and the original method.
