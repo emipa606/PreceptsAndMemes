@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <MemeDef>
     <defName>Necrolatry</defName>
@@ -29,30 +29,30 @@
     </requireOne>
     <generalRules>
       <rulesStrings>
-        <li>memeAdjective-&gt;final</li>
-        <li>memeConcept-&gt;death</li>
-        <li>memeConcept-&gt;rest</li>
+        <li>memeAdjective->final</li>
+        <li>memeConcept->death</li>
+        <li>memeConcept->rest</li>
       </rulesStrings>
     </generalRules>
     <descriptionMaker>
       <rules>
         <rulesStrings>
           <!-- theist myth -->
-          <li>episode(uses=1,tag=meme_Necrolatry)  -&gt;[deity0_name] Taught us about death and it's gifts.</li>
+          <li>episode(uses=1,tag=meme_Necrolatry)  ->[deity0_name] Taught us about death and it's gifts.</li>
           <!-- theist founder -->
-          <li>intro(tag=meme_Necrolatry)           -&gt;[deity0_name] spoke to [memberNamePlural] [revelationAdverb], teaching them the true meaning of death.</li>
-          <li>founderJoin(tag=meme_Necrolatry)     -&gt;A [place_job] named [founderName] was blessed by [deity0_name] and gained miraculous knowledge about the importance of death.</li>
+          <li>intro(tag=meme_Necrolatry)           ->[deity0_name] spoke to [memberNamePlural] [revelationAdverb], teaching them the true meaning of death.</li>
+          <li>founderJoin(tag=meme_Necrolatry)     ->A [place_job] named [founderName] was blessed by [deity0_name] and gained miraculous knowledge about the importance of death.</li>
           <!-- ideological founder -->
-          <li>story(uses=1,tag=meme_Necrolatry)    -&gt;[founderName] Thaught the masses about death and it's importance.</li>
+          <li>story(uses=1,tag=meme_Necrolatry)    ->[founderName] Thaught the masses about death and it's importance.</li>
           <!-- ideological lesson -->
-          <li>lesson(tag=meme_Necrolatry)              -&gt;each person's life is surrounded by the deaths of others</li>
-          <li>lessonReinforcement(tag=meme_Necrolatry) -&gt;In the end, those that accept death will find peace.</li>
+          <li>lesson(tag=meme_Necrolatry)              ->each person's life is surrounded by the deaths of others</li>
+          <li>lessonReinforcement(tag=meme_Necrolatry) ->In the end, those that accept death will find peace.</li>
           <!-- archist -->
-          <li>archistBasis(tag=meme_Necrolatry)    -&gt;Archotechs stand as the arbiters of life and death.</li>
-          <li>archistProphecy(tag=meme_Necrolatry) -&gt;The archotecs will brin death to all the universe, just to create it anew.</li>
+          <li>archistBasis(tag=meme_Necrolatry)    ->Archotechs stand as the arbiters of life and death.</li>
+          <li>archistProphecy(tag=meme_Necrolatry) ->The archotecs will brin death to all the universe, just to create it anew.</li>
           <!-- animist -->
-          <li>animistBasis(tag=meme_Necrolatry)    -&gt;Before everything, there was only a pantheon spirits. Once one of them died, it began to give birth to everything else.</li>
-          <li>animistFact(tag=meme_Necrolatry)     -&gt;Every spirit dies to nourish and expand our world, and we all should follow their example.</li>
+          <li>animistBasis(tag=meme_Necrolatry)    ->Before everything, there was only a pantheon spirits. Once one of them died, it began to give birth to everything else.</li>
+          <li>animistFact(tag=meme_Necrolatry)     ->Every spirit dies to nourish and expand our world, and we all should follow their example.</li>
         </rulesStrings>
       </rules>
     </descriptionMaker>

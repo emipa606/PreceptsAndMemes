@@ -1,4 +1,4 @@
-# PreceptsAndMemes
+# [Precepts and Memes (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2894625496)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -6,7 +6,6 @@ Update of Zezzs mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2582413611
 
 ![Image](https://i.imgur.com/pufA0kM.png)
-
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
@@ -39,9 +38,9 @@ Traders: Trade is paramount, Charity isn't. Gives access to trading precepts.
 
 Altruism. From my other mod of the same name. Charity is important or better, and blocks most "bad people" precepts.
 
-[strike]Ritual:
+~~Ritual:
 
-Colonist duel: Also from my other mod. Allows two colonists and/or slaves to fight each other.[/strike]
+Colonist duel: Also from my other mod. Allows two colonists and/or slaves to fight each other.~~
 
 
 I'll be adding more things as I get more Ideas. Leave any sugestion in the comment.
@@ -49,7 +48,7 @@ I'll be adding more things as I get more Ideas. Leave any sugestion in the comme
 The source files are included. And you're free to use them as you like as long as you give credit back.
 
 
-Due to extreme pressure from a friend of mine, I've set up a Kofi page. Send some [strike] Yayo [/strike] Love this way if you feel like it.
+Due to extreme pressure from a friend of mine, I've set up a Kofi page. Send some ~~ Yayo ~~ Love this way if you feel like it.
 	
 ![Image](https://i.imgur.com/PwoNOj4.png)
 
@@ -57,13 +56,12 @@ Due to extreme pressure from a friend of mine, I've set up a Kofi page. Send som
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2894625496]![Image](https://img.shields.io/github/v/release/emipa606/PreceptsAndMemes?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
-
+[![Image](https://img.shields.io/github/v/release/emipa606/PreceptsAndMemes?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2894625496) | tags: rituals,  precepts,  memes

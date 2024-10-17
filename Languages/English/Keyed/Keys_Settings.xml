@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <MaP.colonistThreshold>Population threshold for population precepts: {0} (At this number, neither buffs nor debuffs are active)</MaP.colonistThreshold>
   <MaP.dayForTradeThreshold>Max days since last trade for trade precepts: {0} (After this number of days, it becomes a negative mood. Requires restart to apply)</MaP.dayForTradeThreshold>

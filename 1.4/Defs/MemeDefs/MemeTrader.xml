@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <MemeDef>
     <defName>Trader</defName>
@@ -19,27 +19,27 @@
     </requireOne>
     <generalRules>
       <rulesStrings>
-        <li>memeAdjective-&gt;profitable</li>
-        <li>memeConcept-&gt;trade</li>
-        <li>memeConcept-&gt;exchange</li>
+        <li>memeAdjective->profitable</li>
+        <li>memeConcept->trade</li>
+        <li>memeConcept->exchange</li>
       </rulesStrings>
     </generalRules>
     <descriptionMaker>
       <rules>
         <rulesStrings>
           <!-- theist myth -->
-          <li>episode(uses=1,tag=meme_Necrolatry)  -&gt;[deity0_name] Showed us how to trade and exchange with one another.</li>
+          <li>episode(uses=1,tag=meme_Necrolatry)  ->[deity0_name] Showed us how to trade and exchange with one another.</li>
           <!-- theist founder -->
-          <li>intro(tag=meme_Necrolatry)           -&gt;[deity0_name] spoke to [memberNamePlural] [revelationAdverb], teaching them the secrets of trade, along with it's true meaning.</li>
-          <li>founderJoin(tag=meme_Necrolatry)     -&gt;A [place_job] named [founderName] was blessed by [deity0_name], becoming the best merchant that ever existed.</li>
+          <li>intro(tag=meme_Necrolatry)           ->[deity0_name] spoke to [memberNamePlural] [revelationAdverb], teaching them the secrets of trade, along with it's true meaning.</li>
+          <li>founderJoin(tag=meme_Necrolatry)     ->A [place_job] named [founderName] was blessed by [deity0_name], becoming the best merchant that ever existed.</li>
           <!-- ideological founder -->
-          <li>story(uses=1,tag=meme_Necrolatry)    -&gt;[founderName] Showed those with little left the art of trade, seding them into an age of prosperity.</li>
+          <li>story(uses=1,tag=meme_Necrolatry)    ->[founderName] Showed those with little left the art of trade, seding them into an age of prosperity.</li>
           <!-- ideological lesson -->
-          <li>lesson(tag=meme_Necrolatry)              -&gt;trading is something that happens everywhere, both in human society and nature</li>
-          <li>lessonReinforcement(tag=meme_Necrolatry) -&gt;If you are good at trading, there' little you can't get.</li>
+          <li>lesson(tag=meme_Necrolatry)              ->trading is something that happens everywhere, both in human society and nature</li>
+          <li>lessonReinforcement(tag=meme_Necrolatry) ->If you are good at trading, there' little you can't get.</li>
           <!-- animist -->
-          <li>animistBasis(tag=meme_Necrolatry)    -&gt;In the begining, the spirits and the earth were separated. Only through trading did they become one.</li>
-          <li>animistFact(tag=meme_Necrolatry)     -&gt;Spirits trade energies with one another, just like we humans trade our belongings.</li>
+          <li>animistBasis(tag=meme_Necrolatry)    ->In the begining, the spirits and the earth were separated. Only through trading did they become one.</li>
+          <li>animistFact(tag=meme_Necrolatry)     ->Spirits trade energies with one another, just like we humans trade our belongings.</li>
         </rulesStrings>
       </rules>
     </descriptionMaker>
