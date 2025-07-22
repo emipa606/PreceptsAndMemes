@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Issue -->
+  <IssueDef>
+    <defName>Death</defName>
+    <label>death</label>
+    <iconPath>Things/Mote/ThoughtSymbol/Skull</iconPath>
+  </IssueDef>
+  <HistoryEventDef>
+    <defName>ColonistDied</defName>
+    <label>colonist died</label>
+  </HistoryEventDef>
+  <!-- Precept -->
+  <PreceptDef>
+    <defName>Death_DontCare</defName>
+    <issue>Death</issue>
+    <label>Don't care</label>
+    <description>The dead are just that, dead. It serves no purpose to spill tears for them.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <selectionWeight>0.75</selectionWeight>
+    <statOffsets>
+      <MedicalTendQuality>-0.10</MedicalTendQuality>
+    </statOffsets>
+    <associatedMemes>
+      <li>PainIsVirtue</li>
+      <li>Cannibal</li>
+      <li>Raider</li>
+    </associatedMemes>
+  </PreceptDef>
+  <PreceptDef>
+    <defName>Death_Revered</defName>
+    <issue>Death</issue>
+    <label>Revered</label>
+    <description>We should cherish death, as life is only the begining.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <selectionWeight>0.25</selectionWeight>
+    <statOffsets>
+      <MedicalTendQuality>-0.20</MedicalTendQuality>
+    </statOffsets>
+    <associatedMemes>
+      <li>Necrolatry</li>
+    </associatedMemes>
+    <requiredMemes>
+      <li>Necrolatry</li>
+    </requiredMemes>
+    <comps>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>ColonistDied</eventDef>
+        <thought>ColonistDied_Revered</thought>
+        <description>Someone died</description>
+      </li>
+    </comps>
+  </PreceptDef>
+  <ThoughtDef>
+    <defName>ColonistDied_Revered</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>One of us died</label>
+        <description>One of us died... Let's celebrate!</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

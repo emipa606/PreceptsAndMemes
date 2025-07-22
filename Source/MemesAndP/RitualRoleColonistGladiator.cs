@@ -5,7 +5,7 @@ namespace MemesAndP;
 
 public class RitualRoleColonistGladiator : RitualRole
 {
-    public bool mustBeCapableToFight;
+    private bool mustBeCapableToFight;
 
     //A compy paste of the ritual role for the vanilla duel, except for one change.
     public override bool AppliesToPawn(Pawn p, out string reason, TargetInfo selectedTarget,

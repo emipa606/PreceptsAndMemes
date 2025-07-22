@@ -7,7 +7,7 @@ namespace MemesAndP;
 
 public class PandM : Mod
 {
-    public static readonly History history = new History();
+    public static readonly History History = new();
     private static string currentVersion;
     private Settings settings;
 
@@ -49,8 +49,8 @@ public class PandM : Mod
     public static int GetPopulation()
     {
         //Counts all the pawns belonging to your faction.
-        return PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists
-            .Count; //The mod is more oriented to one colony only. But if I wanted to make it more compatible with
+        return PawnsFinder.AllMapsCaravansAndTravellingTransporters_Alive_Colonists.Count;
+        //The mod is more oriented to one colony only. But if I wanted to make it more compatible with
         //multiple colonies I would make it check the map of every colonist individually. Counting caravans
         //is intentional for balancing purposes.
     }

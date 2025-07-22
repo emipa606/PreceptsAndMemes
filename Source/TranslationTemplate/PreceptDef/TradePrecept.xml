@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Don't care -->
+  <TradingDontcare.label>Don't care</TradingDontcare.label>
+  <!-- EN: Trading is just another tool for survival. -->
+  <TradingDontcare.description>Trading is just another tool for survival.</TradingDontcare.description>
+  <!-- EN: Honored -->
+  <TradingHonored.label>Honored</TradingHonored.label>
+  <!-- EN: The art of trading is second to none. We ought to trade as often as we can. -->
+  <TradingHonored.description>The art of trading is second to none. We ought to trade as often as we can.</TradingHonored.description>
+  <!-- EN: Less than {DAYSSINCELASTTRADETHRESHOLD} days since our last trade -->
+  <TradingHonored.comps.0.thoughtStageDescriptions.0>Less than {DAYSSINCELASTTRADETHRESHOLD} days since our last trade</TradingHonored.comps.0.thoughtStageDescriptions.0>
+  <!-- EN: More than {DAYSSINCELASTTRADETHRESHOLD} days since our last trade -->
+  <TradingHonored.comps.0.thoughtStageDescriptions.1>More than {DAYSSINCELASTTRADETHRESHOLD} days since our last trade</TradingHonored.comps.0.thoughtStageDescriptions.1>
+  <!-- EN: Respected -->
+  <TradingRespected.label>Respected</TradingRespected.label>
+  <!-- EN: The art of trading is a noble one. We should use it whenever we can. -->
+  <TradingRespected.description>The art of trading is a noble one. We should use it whenever we can.</TradingRespected.description>
+  <!-- EN: Less than {DAYSSINCELASTTRADETHRESHOLD} days since our last trade -->
+  <TradingRespected.comps.0.thoughtStageDescriptions.0>Less than {DAYSSINCELASTTRADETHRESHOLD} days since our last trade</TradingRespected.comps.0.thoughtStageDescriptions.0>
+  <!-- EN: More than {DAYSSINCELASTTRADETHRESHOLD} days since our last trade -->
+  <TradingRespected.comps.0.thoughtStageDescriptions.1>More than {DAYSSINCELASTTRADETHRESHOLD} days since our last trade</TradingRespected.comps.0.thoughtStageDescriptions.1>
+</LanguageData>

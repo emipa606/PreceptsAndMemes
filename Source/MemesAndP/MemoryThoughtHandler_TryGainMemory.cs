@@ -6,10 +6,12 @@ using Verse;
 
 namespace MemesAndP;
 
-[HarmonyPatch(typeof(MemoryThoughtHandler), "TryGainMemory", typeof(Thought_Memory), typeof(Pawn))]
-public static class TryGainMemory_Patch
+//For a later date for now. The purpose of this is to make all ideo related moodlets be multiplied by you orthodoxy. If you know how to finish this you're free to do it yourself or send it back to me.
+[HarmonyPatch(typeof(MemoryThoughtHandler), nameof(MemoryThoughtHandler.TryGainMemory), typeof(Thought_Memory),
+    typeof(Pawn))]
+public static class MemoryThoughtHandler_TryGainMemory
 {
-    public static readonly HashSet<string> deathThoughts =
+    private static readonly HashSet<string> deathThoughts =
     [
         "KnowGuestExecuted",
         "KnowColonistExecuted",
@@ -63,8 +65,16 @@ public static class TryGainMemory_Patch
     // This cancels the though related to death for any of the pawns that belong to an Ideo that has the two death precepts. This works because when
     // a prefix returns a "false", it skips the rest of the prefixes and the original method.
     // Some credit goes to Vanilla Traits Expanded, as I learned how to do this part thanks to that mod.
-    private static bool Prefix(MemoryThoughtHandler __instance, Thought_Memory newThought)
+    private static bool Prefix(MemoryThoughtHandler __instance, ref Thought_Memory newThought)
     {
+        if (newThought.sourcePrecept != null)
+        {
+            if (__instance.pawn.Ideo.HasPrecept(PreceptDefOfDeath.Orthodoxy))
+            {
+                newThought.moodPowerFactor *= 2f;
+            }
+        }
+
         //Checks if the pawn that's about to get one of the thoughts contained in deathThoughts belongs to an Ideo that has the death cancelling precepts.
         try
         {

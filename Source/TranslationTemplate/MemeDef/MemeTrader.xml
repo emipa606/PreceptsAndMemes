@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: trader -->
+  <Trader.label>trader</Trader.label>
+  <!-- EN: To trade one thing for another, that's the essence of life. -->
+  <Trader.description>To trade one thing for another, that's the essence of life.</Trader.description>
+  <!-- EN:
+    <li>episode(uses=1,tag=meme_Necrolatry)  ->[deity0_name] Showed us how to trade and exchange with one another.</li>
+    <li>intro(tag=meme_Necrolatry)           ->[deity0_name] spoke to [memberNamePlural] [revelationAdverb], teaching them the secrets of trade, along with it's true meaning.</li>
+    <li>founderJoin(tag=meme_Necrolatry)     ->A [place_job] named [founderName] was blessed by [deity0_name], becoming the best merchant that ever existed.</li>
+    <li>story(uses=1,tag=meme_Necrolatry)    ->[founderName] Showed those with little left the art of trade, seding them into an age of prosperity.</li>
+    <li>lesson(tag=meme_Necrolatry)              ->trading is something that happens everywhere, both in human society and nature</li>
+    <li>lessonReinforcement(tag=meme_Necrolatry) ->If you are good at trading, there' little you can't get.</li>
+    <li>animistBasis(tag=meme_Necrolatry)    ->In the begining, the spirits and the earth were separated. Only through trading did they become one.</li>
+    <li>animistFact(tag=meme_Necrolatry)     ->Spirits trade energies with one another, just like we humans trade our belongings.</li>
+  -->
+  <Trader.descriptionMaker.rules.rulesStrings>
+    <li>episode(uses=1,tag=meme_Necrolatry)  ->[deity0_name] Showed us how to trade and exchange with one another.</li>
+    <li>intro(tag=meme_Necrolatry)           ->[deity0_name] spoke to [memberNamePlural] [revelationAdverb], teaching them the secrets of trade, along with it's true meaning.</li>
+    <li>founderJoin(tag=meme_Necrolatry)     ->A [place_job] named [founderName] was blessed by [deity0_name], becoming the best merchant that ever existed.</li>
+    <li>story(uses=1,tag=meme_Necrolatry)    ->[founderName] Showed those with little left the art of trade, seding them into an age of prosperity.</li>
+    <li>lesson(tag=meme_Necrolatry)              ->trading is something that happens everywhere, both in human society and nature</li>
+    <li>lessonReinforcement(tag=meme_Necrolatry) ->If you are good at trading, there' little you can't get.</li>
+    <li>animistBasis(tag=meme_Necrolatry)    ->In the begining, the spirits and the earth were separated. Only through trading did they become one.</li>
+    <li>animistFact(tag=meme_Necrolatry)     ->Spirits trade energies with one another, just like we humans trade our belongings.</li>
+  </Trader.descriptionMaker.rules.rulesStrings>
+  <!-- EN:
+    <li>memeAdjective->profitable</li>
+    <li>memeConcept->trade</li>
+    <li>memeConcept->exchange</li>
+  -->
+  <Trader.generalRules.rulesStrings>
+    <li>memeAdjective->profitable</li>
+    <li>memeConcept->trade</li>
+    <li>memeConcept->exchange</li>
+  </Trader.generalRules.rulesStrings>
+  <!-- EN: Profitable -->
+  <Trader.symbolPacks.0.adjective>Profitable</Trader.symbolPacks.0.adjective>
+  <!-- EN: Guild -->
+  <Trader.symbolPacks.0.ideoName>Guild</Trader.symbolPacks.0.ideoName>
+  <!-- EN: merchant -->
+  <Trader.symbolPacks.0.member>merchant</Trader.symbolPacks.0.member>
+  <!-- EN: trade -->
+  <Trader.symbolPacks.0.theme>trade</Trader.symbolPacks.0.theme>
+</LanguageData>

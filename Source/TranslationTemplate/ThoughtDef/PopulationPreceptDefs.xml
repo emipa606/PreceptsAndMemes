@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: High population -->
+  <PopulationLarge_PopulationHigh.stages.High_population.label>High population</PopulationLarge_PopulationHigh.stages.High_population.label>
+  <!-- EN: We're getting bigger! Keep 'em comming -->
+  <PopulationLarge_PopulationHigh.stages.High_population.description>We're getting bigger! Keep 'em comming</PopulationLarge_PopulationHigh.stages.High_population.description>
+  <!-- EN: Low population -->
+  <PopulationLarge_PopulationLow.stages.Low_population.label>Low population</PopulationLarge_PopulationLow.stages.Low_population.label>
+  <!-- EN: This place feels empty. We should get more people on board. -->
+  <PopulationLarge_PopulationLow.stages.Low_population.description>This place feels empty. We should get more people on board.</PopulationLarge_PopulationLow.stages.Low_population.description>
+  <!-- EN: High population -->
+  <PopulationSmall_PopulationHigh.stages.High_population.label>High population</PopulationSmall_PopulationHigh.stages.High_population.label>
+  <!-- EN: This place is getting cramped. -->
+  <PopulationSmall_PopulationHigh.stages.High_population.description>This place is getting cramped.</PopulationSmall_PopulationHigh.stages.High_population.description>
+  <!-- EN: Low population -->
+  <PopulationSmall_PopulationLow.stages.Low_population.label>Low population</PopulationSmall_PopulationLow.stages.Low_population.label>
+  <!-- EN: There isn't many people around. I'm enjoying all the peace and silence. -->
+  <PopulationSmall_PopulationLow.stages.Low_population.description>There isn't many people around. I'm enjoying all the peace and silence.</PopulationSmall_PopulationLow.stages.Low_population.description>
+</LanguageData>

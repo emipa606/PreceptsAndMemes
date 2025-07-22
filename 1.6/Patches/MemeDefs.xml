@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/MemeDef[defName = "Raider"]/exclusionTags</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/MemeDef[defName = "Raider"]</xpath>
+      <value>
+        <exclusionTags>
+          <li>AltruismRaider</li>
+          <li>TraderRaider</li>
+        </exclusionTags>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/MemeDef[defName = "Raider"]/exclusionTags</xpath>
+      <value>
+        <li>AltruismRaider</li>
+        <li>TraderRaider</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/MemeDef[defName = "Cannibal"]/exclusionTags</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/MemeDef[defName = "Cannibal"]</xpath>
+      <value>
+        <exclusionTags>
+          <li>AltruismCannibal</li>
+        </exclusionTags>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/MemeDef[defName = "Cannibal"]/exclusionTags</xpath>
+      <value>
+        <li>AltruismCannibal</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/MemeDef[defName = "PainIsVirtue"]/exclusionTags</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/MemeDef[defName = "PainIsVirtue"]</xpath>
+      <value>
+        <exclusionTags>
+          <li>AltruismPain</li>
+        </exclusionTags>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/MemeDef[defName = "PainIsVirtue"]/exclusionTags</xpath>
+      <value>
+        <li>AltruismPain</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/MemeDef[defName="Transhumanist"]/exclusionTags</xpath>
+    <value>
+      <li>NecrolatryTranshumanist</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/MemeDef[defName="FleshPurity"]/exclusionTags</xpath>
+    <value>
+      <li>NecrolatryBodypurist</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/MemeDef[defName="Blindsight"]/exclusionTags</xpath>
+    <value>
+      <li>NecrolatryBlindsight</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/MemeDef[defName="Altruism"]/exclusionTags</xpath>
+    <value>
+      <li>NecrolatryAltruism</li>
+    </value>
+  </Operation>
+</Patch>

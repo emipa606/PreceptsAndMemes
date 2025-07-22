@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Don't care -->
+  <Death_DontCare.label>Don't care</Death_DontCare.label>
+  <!-- EN: The dead are just that, dead. It serves no purpose to spill tears for them. -->
+  <Death_DontCare.description>The dead are just that, dead. It serves no purpose to spill tears for them.</Death_DontCare.description>
+  <!-- EN: Revered -->
+  <Death_Revered.label>Revered</Death_Revered.label>
+  <!-- EN: We should cherish death, as life is only the begining. -->
+  <Death_Revered.description>We should cherish death, as life is only the begining.</Death_Revered.description>
+  <!-- EN: Someone died -->
+  <Death_Revered.comps.0.description>Someone died</Death_Revered.comps.0.description>
+</LanguageData>

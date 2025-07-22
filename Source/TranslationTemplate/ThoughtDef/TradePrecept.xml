@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: recent trade -->
+  <RecentTrade_Honored.stages.recent_trade.label>recent trade</RecentTrade_Honored.stages.recent_trade.label>
+  <!-- EN: We recently traded with someone. We're gonna be rich! -->
+  <RecentTrade_Honored.stages.recent_trade.description>We recently traded with someone. We're gonna be rich!</RecentTrade_Honored.stages.recent_trade.description>
+  <!-- EN: no recent trade -->
+  <RecentTrade_Honored.stages.no_recent_trade.label>no recent trade</RecentTrade_Honored.stages.no_recent_trade.label>
+  <!-- EN: It's been far too long since we traded with anyone. We're a failure... -->
+  <RecentTrade_Honored.stages.no_recent_trade.description>It's been far too long since we traded with anyone. We're a failure...</RecentTrade_Honored.stages.no_recent_trade.description>
+  <!-- EN: recent trade -->
+  <RecentTrade_Respected.stages.recent_trade.label>recent trade</RecentTrade_Respected.stages.recent_trade.label>
+  <!-- EN: We recently traded with someone. -->
+  <RecentTrade_Respected.stages.recent_trade.description>We recently traded with someone.</RecentTrade_Respected.stages.recent_trade.description>
+  <!-- EN: no recent trade -->
+  <RecentTrade_Respected.stages.no_recent_trade.label>no recent trade</RecentTrade_Respected.stages.no_recent_trade.label>
+  <!-- EN: It's been far too long since we traded with anyone. Business ain't doing well, chief. -->
+  <RecentTrade_Respected.stages.no_recent_trade.description>It's been far too long since we traded with anyone. Business ain't doing well, chief.</RecentTrade_Respected.stages.no_recent_trade.description>
+</LanguageData>

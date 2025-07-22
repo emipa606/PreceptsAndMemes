@@ -28,9 +28,9 @@ public class RitualObligationTargetWorker_GraveWithCorpse : RitualObligationTarg
 
     protected override RitualTargetUseReport CanUseTargetInternal(TargetInfo target, RitualObligation obligation)
     {
-        Building_Grave building_Grave;
-        return target.HasThing && (building_Grave = target.Thing as Building_Grave) != null &&
-               building_Grave.Corpse != null;
+        Building_Grave buildingGrave;
+        return target.HasThing && (buildingGrave = target.Thing as Building_Grave) != null &&
+               buildingGrave.Corpse != null;
     }
 
     public override bool ObligationTargetsValid(RitualObligation obligation)

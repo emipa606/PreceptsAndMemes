@@ -23,7 +23,7 @@ public class ThoughtWorker_Precept_Trading : ThoughtWorker_Precept, IPreceptComp
 
     private float DaysSinceLastTrade =>
         //Gets the last tick you traded and divides it into days.
-        (Find.TickManager.TicksGame - PandM.history.lastTickTraded) / 60000f;
+        (Find.TickManager.TicksGame - PandM.History.lastTickTraded) / 60000f;
 
     //This is for the interface, purely aesthetic. 
     public IEnumerable<NamedArgument> GetDescriptionArgs()

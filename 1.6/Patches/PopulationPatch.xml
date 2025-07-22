@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName="DeniedJoining"]</xpath>
+    <value>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">PopulationSmall</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName="ColonistBanished"]</xpath>
+    <value>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">PopulationSmall</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+</Patch>

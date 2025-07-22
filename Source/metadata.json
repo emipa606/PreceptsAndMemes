@@ -2,11 +2,18 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "2",
-  "PreviewVersion": "1.5",
+  "PreviewVersion": "1.6",
   "SocialImageSet": true,
   "SearchTags": [
     "rituals",
     " precepts",
     " memes"
-  ]
+  ],
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 19634,
+  "LinesOfXML": 28352,
+  "CodeBaseSize": 74,
+  "LastXmlCleaning": "2025-07-22T20:25:46.3268688+02:00"
 }

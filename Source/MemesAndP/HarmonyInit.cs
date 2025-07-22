@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using System.Reflection;
+using HarmonyLib;
 using Verse;
 
 namespace MemesAndP;
@@ -8,6 +9,6 @@ internal static class HarmonyInit
 {
     static HarmonyInit()
     {
-        new Harmony("Zezz.PreceptsAndMemes").PatchAll(); //Applies all harmony patches.
+        new Harmony("Zezz.PreceptsAndMemes").PatchAll(Assembly.GetExecutingAssembly()); //Applies all harmony patches.
     }
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Any -->
+  <PopulationAny.label>Any</PopulationAny.label>
+  <!-- EN: The ammount of people on our side is of little importance to us. -->
+  <PopulationAny.description>The ammount of people on our side is of little importance to us.</PopulationAny.description>
+  <!-- EN: large -->
+  <PopulationLarge.label>large</PopulationLarge.label>
+  <!-- EN: We should be as many as we can. -->
+  <PopulationLarge.description>We should be as many as we can.</PopulationLarge.description>
+  <!-- EN: Each colonist in faction -->
+  <PopulationLarge.comps.0.description>Each colonist in faction</PopulationLarge.comps.0.description>
+  <!-- EN: small -->
+  <PopulationSmall.label>small</PopulationSmall.label>
+  <!-- EN: Our community should be composed of only a few. -->
+  <PopulationSmall.description>Our community should be composed of only a few.</PopulationSmall.description>
+  <!-- EN: Each colonist in faction -->
+  <PopulationSmall.comps.0.description>Each colonist in faction</PopulationSmall.comps.0.description>
+  <!-- EN: Each colonist in faction -->
+  <PopulationSmall.comps.1.description>Each colonist in faction</PopulationSmall.comps.1.description>
+</LanguageData>
